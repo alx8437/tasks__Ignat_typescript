@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Affairs from "./Affairs";
 
 // types
-export type AffairPriorityType = "all" | "high" | "low" | "middle";
+export type AffairPriorityType = "high" | "low" | "middle";
 export type AffairType = {
     _id: number
     name: string
@@ -20,7 +20,7 @@ const defaultAffairs: Array<AffairType> = [
 ];
 
 // pure helper functions
-export const filterAffairs = (affairs: Array<AffairType>, filter: AffairPriorityType): Array<AffairType> => { // need to fix any
+export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => { // need to fix any
     switch (filter) {
         case "all": return affairs
         case "high": return affairs.filter(a => a.priority === "high")

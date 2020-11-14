@@ -1,13 +1,9 @@
-li {
+.item {
     list-style-type: none;
 }
 
-h3 {
-    display: block;
-    text-align: center;
-}
 
-button {
+.buttonRemove {
     margin: 15px 15px 0 0 ;
     height: 25px;
 }

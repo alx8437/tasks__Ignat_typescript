@@ -1,11 +1,11 @@
 import React, {Dispatch, SetStateAction} from "react";
 import Affair from "./Affair";
-import {AffairPriorityType, AffairType} from "./HW2";
+import {AffairType, FilterType} from "./HW2";
 import styles from "./Affairs.module.css"
 
-type AffairsPropsType = { // need to fix any
+type AffairsPropsType = {
     data: Array<AffairType>
-    setFilter: Dispatch<SetStateAction<AffairPriorityType>>
+    setFilter: Dispatch<SetStateAction<FilterType>>
     deleteAffairCallback: (id: number) => void
 }
 
@@ -27,10 +27,10 @@ function Affairs(props: AffairsPropsType) {
         <div>
             {mappedAffairs}
             <div  className={styles.buttonWrapper}>
-                <button className={styles.button} onClick={setAll}>All</button>
-                <button className={styles.button} onClick={setHigh}>High</button>
-                <button className={styles.button} onClick={setMiddle}>Middle</button>
-                <button className={styles.button} onClick={setLow}>Low</button>
+                <button className={styles.buttonPriority} onClick={setAll}>All</button>
+                <button className={styles.buttonPriority} onClick={setHigh}>High</button>
+                <button className={styles.buttonPriority} onClick={setMiddle}>Middle</button>
+                <button className={styles.buttonPriority} onClick={setLow}>Low</button>
             </div>
 
         </div>

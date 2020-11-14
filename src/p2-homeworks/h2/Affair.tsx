@@ -13,14 +13,14 @@ function Affair(props: AffairPropsType) {
     return (
         <div className={styles.wrapper}>
             <ul>
-                <li>
+                <li className={styles.item}>
                     id: {props.affair._id},
                     detail: {props.affair.name},
                     priority: {props.affair.priority}
                 </li>
             </ul>
 
-            <button className={styles.buttonWrapper} onClick={deleteCallback}>X</button>
+            <button className={styles.buttonRemove} onClick={deleteCallback}>X</button>
         </div>
     );
 }
