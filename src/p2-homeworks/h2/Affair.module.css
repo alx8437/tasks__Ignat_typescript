@@ -1,0 +1,24 @@
+li {
+    list-style-type: none;
+}
+
+h3 {
+    display: block;
+    text-align: center;
+}
+
+button {
+    margin: 15px 15px 0 0 ;
+    height: 25px;
+}
+
+.wrapper {
+    margin-top: 2px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid  black;
+    border-radius: 3px;
+    background-color: rgba(44, 177, 47, 0.91);
+    color: white;
+}
