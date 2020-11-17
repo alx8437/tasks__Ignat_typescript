@@ -1,7 +1,37 @@
-.someClass {
-
+.wrapperGreeting {
+    margin-top: 5px;
+    width: 360px;
+    height: 40px;
+    background-color: rgba(85, 134, 62, 0.88);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 3px;
 }
 
-.error {
+
+.errorGreeting {
+}
+
+.inputGreetingWrapper {
     border: 1px solid red;
 }
+
+.totalUsersGreeting {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.buttonGreeting {
+    font-weight: bold;
+}
+
+.errorMessageGreeting {
+    font-size: 15px;
+    color: red;
+    font-weight: bold;
+}
+
