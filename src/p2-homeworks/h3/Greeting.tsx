@@ -3,7 +3,7 @@ import s from "./Greeting.module.css";
 
 type GreetingPropsType = {
     name: string
-    setNameCallback: any
+    setNameCallback: (e: React.ChangeEvent<HTMLInputElement>) => void
     addUser: () => void
     error?: string
     totalUsers: number
