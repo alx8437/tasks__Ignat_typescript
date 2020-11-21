@@ -34,7 +34,7 @@ function HW4() {
 
                 {/*should work (должно работать)*/}
                 <SuperButton
-                    red // пропсу с булевым значением не обязательно указывать true
+                    red={false} // пропсу с булевым значением не обязательно указывать true
                     onClick={showAlert}
                 >
                     delete {/*// название кнопки попадёт в children*/}
