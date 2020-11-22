@@ -34,7 +34,7 @@ function HW4() {
 
                 {/*should work (должно работать)*/}
                 <SuperButton
-                    red={false} // пропсу с булевым значением не обязательно указывать true
+                    red={text === ""} // пропсу с булевым значением не обязательно указывать true
                     onClick={showAlert}
                 >
                     post {/*// название кнопки попадёт в children* (content between open and close tag)*/}
