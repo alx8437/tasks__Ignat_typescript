@@ -5,10 +5,10 @@
 
 .buttonWrapper {
     margin-top: 2px;
-    width: 375px;
+    width: 380px;
     display: flex;
     justify-content: space-between;
-    padding: 0 5px 15px 20px;
+    padding: 10px;
     border: 1px solid  black;
     border-radius: 3px;
     background-color: #3e864a;
