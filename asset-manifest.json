@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tasks__Ignat_typescript/static/css/main.792c8b46.chunk.css",
+    "main.js": "/tasks__Ignat_typescript/static/js/main.d0ccc76d.chunk.js",
+    "main.js.map": "/tasks__Ignat_typescript/static/js/main.d0ccc76d.chunk.js.map",
+    "runtime-main.js": "/tasks__Ignat_typescript/static/js/runtime-main.16b2d2f7.js",
+    "runtime-main.js.map": "/tasks__Ignat_typescript/static/js/runtime-main.16b2d2f7.js.map",
+    "static/js/2.a9ae54ae.chunk.js": "/tasks__Ignat_typescript/static/js/2.a9ae54ae.chunk.js",
+    "static/js/2.a9ae54ae.chunk.js.map": "/tasks__Ignat_typescript/static/js/2.a9ae54ae.chunk.js.map",
+    "index.html": "/tasks__Ignat_typescript/index.html",
+    "precache-manifest.b3066e025d7030b51bbf77521a6c3181.js": "/tasks__Ignat_typescript/precache-manifest.b3066e025d7030b51bbf77521a6c3181.js",
+    "service-worker.js": "/tasks__Ignat_typescript/service-worker.js",
+    "static/css/main.792c8b46.chunk.css.map": "/tasks__Ignat_typescript/static/css/main.792c8b46.chunk.css.map",
+    "static/js/2.a9ae54ae.chunk.js.LICENSE.txt": "/tasks__Ignat_typescript/static/js/2.a9ae54ae.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.16b2d2f7.js",
+    "static/js/2.a9ae54ae.chunk.js",
+    "static/css/main.792c8b46.chunk.css",
+    "static/js/main.d0ccc76d.chunk.js"
+  ]
+}
