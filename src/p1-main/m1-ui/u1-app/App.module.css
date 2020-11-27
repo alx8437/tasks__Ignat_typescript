@@ -1,3 +1,9 @@
 .App {
 
 }
+
+.wrapperContent_HW {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}

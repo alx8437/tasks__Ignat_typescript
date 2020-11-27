@@ -1,0 +1,59 @@
+.navbarWrapper {
+    margin: 10px auto;
+    width: 360px;
+    height: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.myTaskShow {
+    width: 320px;
+    height: 30px;
+    background-color: rgb(44, 177, 47);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.myTaskShow span {
+    font-weight: normal;
+    font-size: 10px;
+}
+
+.list, .listNone {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    min-width: 240px;
+    background-color: rgb(44, 177, 47);
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.list {
+    left: 345px;
+}
+
+.listNone {
+    left: 100px;
+}
+
+.activeItem {
+    width: 90px;
+    background-color: #054caf;
+    border: 1px solid inherit;
+    border-radius: 10px;
+}
+
+.navlink {
+    color: white;
+    text-decoration: none;
+}
+

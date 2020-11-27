@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import Affairs from "./Affairs";
+import s from "../../p1-main/m1-ui/u1-app/App.module.css";
+
 
 // types
 export type AffairPriorityType = "high" | "low" | "middle";
@@ -22,12 +24,17 @@ const defaultAffairs: Array<AffairType> = [
 // pure helper functions
 export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => { // need to fix any
     switch (filter) {
-        case "all": return affairs
-        case "high": return affairs.filter(a => a.priority === "high")
-        case "low": return affairs.filter(a => a.priority === "low")
-        case "middle": return affairs.filter(a => a.priority === "middle")
+        case "all":
+            return affairs
+        case "high":
+            return affairs.filter(a => a.priority === "high")
+        case "low":
+            return affairs.filter(a => a.priority === "low")
+        case "middle":
+            return affairs.filter(a => a.priority === "middle")
 
-        default: return affairs
+        default:
+            return affairs
     }
 }
 export const deleteAffair = (affairs: Array<AffairType>, id: number): Array<AffairType> => { // need to fix any
@@ -42,17 +49,20 @@ function HW2() {
     const deleteAffairCallback = (id: number) => setAffairs(deleteAffair(affairs, id)); // need to fix any
 
     return (
-        <div>
+        <div className={s.wrapper_HW}>
             <hr/>
             homeworks 2
 
-            <Affairs
-                data={filteredAffairs}
-                setFilter={setFilter}
-                deleteAffairCallback={deleteAffairCallback}
-            />
 
-            <hr/>
+            <div className={s.wrapperContent_HW}>
+                <Affairs
+                    data={filteredAffairs}
+                    setFilter={setFilter}
+                    deleteAffairCallback={deleteAffairCallback}
+                />
+            </div>
+
+
         </div>
     );
 }

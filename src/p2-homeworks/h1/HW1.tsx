@@ -1,5 +1,6 @@
 import React from "react";
 import Message from "./Message";
+import s from "../../p1-main/m1-ui/u1-app/App.module.css";
 
 const date = new Date().toLocaleTimeString(navigator.language, {hour: '2-digit', minute: '2-digit'})
 
@@ -17,18 +18,15 @@ function HW1() {
             homeworks 1
 
             {/*should work (должно работать)*/}
+            <div className={s.wrapperContent_HW}>
+                <Message
+                    avatar={messageData.avatar}
+                    name={messageData.name}
+                    message={messageData.message}
+                    time={messageData.time}
+                />
+            </div>
 
-            <Message
-                avatar={messageData.avatar}
-                name={messageData.name}
-                message={messageData.message}
-                time={messageData.time}
-            />
-
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeMessage/>*/}
-            <hr/>
         </div>
     );
 }
