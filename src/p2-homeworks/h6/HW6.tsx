@@ -10,6 +10,7 @@ function HW6() {
     const save = () => {
         saveState<string>("editable-span-value", value);
         setValue(value)
+        setValue("") // сделал зануление инпута
     };
     const restore = () => {
         const restore = restoreState("editable-span-value", value)
