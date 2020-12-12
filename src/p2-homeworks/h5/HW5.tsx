@@ -7,8 +7,8 @@ function HW5() {
     return (
         <div>
             <HashRouter>
-            <Header/>
-            <Routes/>
+                <Header/>
+                <Routes/>
             </HashRouter>
         </div>
     );

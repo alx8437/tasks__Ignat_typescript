@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
 import s from "./Header.module.css"
 import {v1} from "uuid";
+import {PATH} from "./Routes";
 
 type MenuActiveType = {
     id: string
@@ -15,8 +16,8 @@ function Header() {
     const [showMenu, setShowMenu] = useState<boolean>(false)
     const [menuActive, setMenuActive] = useState<Array<MenuActiveType>>([
         {id: v1(), navlink: "/", title: "PreJunior", isActive: false},
-        {id: v1(), navlink: "/junior", title: "Junior", isActive: false},
-        {id: v1(), navlink: "/junior_plus", title: "JuniorPlus", isActive: false}
+        {id: v1(), navlink: PATH.JUNIOR, title: "Junior", isActive: false},
+        {id: v1(), navlink: PATH.JUNIOR_PLUS, title: "JuniorPlus", isActive: false}
     ])
 
     function setStatusActive(id: string) {
