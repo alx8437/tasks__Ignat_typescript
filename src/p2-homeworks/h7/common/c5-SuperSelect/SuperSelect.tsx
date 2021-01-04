@@ -1,13 +1,14 @@
 import React, {ChangeEvent, DetailedHTMLProps, SelectHTMLAttributes} from "react";
+import s from "../c5-SuperSelect/SuperSelect.module.css"
 
 type DefaultSelectPropsType = DetailedHTMLProps<SelectHTMLAttributes<HTMLSelectElement>, HTMLSelectElement>
 
 type SuperSelectPropsType = DefaultSelectPropsType & {
-    options: any[]
+    options?: any[]
     onChangeOption?: (option: any) => void
 }
 
-const SuperSelect: React.FC<SuperSelectPropsType> = (
+const SuperSelect: React.FC<SuperSelectPropsType> = React.memo((
     {
         options,
         onChange, onChangeOption,
@@ -15,21 +16,27 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
     }
 ) => {
 
-    const mappedOptions: any[] = options?.map((option, index) => {
+
+     const mappedOptions: any[] = options ? options.map((option, index) => {
             return <option value={option} key={index}>{option}</option>
-        }) // map options with key
+        }) : [];
 
 
 
     const onChangeCallback = (e: ChangeEvent<HTMLSelectElement>) => {
-        // onChange, onChangeOption
+        if (onChangeOption) {
+            onChangeOption(e.currentTarget.value)
+        }
     }
 
     return (
-        <select onChange={onChangeCallback} {...restProps}>
-            {mappedOptions}
-        </select>
+        <div className={s.selectWrapper}>
+            <select className={s.selectCss} onChange={onChangeCallback} {...restProps}>
+                {mappedOptions}
+            </select>
+        </div>
+
     );
-}
+});
 
 export default SuperSelect;

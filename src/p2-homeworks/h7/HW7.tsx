@@ -7,13 +7,13 @@ const arr = ["x", "y", "z"];
 
 function HW7() {
     const [value, onChangeOption] = useState<Array<string>>(arr);
+    console.log(value)
 
     return (
         <div>
             <hr/>
             homeworks 7
             <div className={s.wrapperContent_HW}>
-                {/*should work (должно работать)*/}
                 <div>
                     <SuperSelect
                         options={arr}

@@ -1,0 +1,22 @@
+
+.radioBtnWrapper {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ededed;
+    padding: 0 5px;
+    border: 1px solid #b0a8a8;
+    border-radius: 5px;
+}
+
+/* Hide the browser's default radio button */
+.radioBtnWrapper input {
+    cursor: pointer;
+
+}
+
+
+
+
