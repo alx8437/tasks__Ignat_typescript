@@ -7,7 +7,6 @@ const arr = ["x", "y", "z"];
 
 function HW7() {
     const [value, onChangeOption] = useState<Array<string>>(arr);
-    console.log(value)
 
     return (
         <div>
