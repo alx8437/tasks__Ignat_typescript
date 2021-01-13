@@ -1,18 +1,15 @@
 import React from "react";
 import Clock from "./Clock";
+import s from "../../p1-main/m1-ui/u1-app/App.module.css";
+
 
 function HW9() {
     return (
         <div>
-            <hr/>
             homeworks 9
-
-            {/*should work (должно работать)*/}
-            <Clock/>
-
-            <hr/>
-            {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeClock/>*/}
+            <div className={s.wrapperContent_HW}>
+                <Clock/>
+            </div>
             <hr/>
         </div>
     );

@@ -33,7 +33,6 @@ function HW8() {
 
     return (
         <div>
-            <hr/>
             homeworks 8
             <div className={s.wrapperContent_HW}>
                 <div>

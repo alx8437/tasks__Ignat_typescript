@@ -1,0 +1,10 @@
+.timeWrapper {
+    margin: 4px;
+    padding: 3px;
+    border: 2px solid #0a1fba;
+    color: #ba0a10;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 7px;
+    background-color: rgba(243, 229, 183, 0.92);
+}
