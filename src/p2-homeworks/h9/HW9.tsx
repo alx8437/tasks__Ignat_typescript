@@ -8,10 +8,11 @@ function HW9() {
         <div>
             homeworks 9
             <div className={s.wrapperContent_HW}>
-                <Clock/>
+                <Clock />
             </div>
             <hr/>
         </div>
+
     );
 }
 

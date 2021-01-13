@@ -3,12 +3,16 @@ import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 import s from "./Clock.module.css"
 
 function Clock() {
-    console.log("Clock render!!!!!!!!!")
     const [timerId, setTimerId] = useState<number>(0);
     const [date, setDate] = useState<Date>();
     const [show, setShow] = useState<boolean>(false);
 
-    useEffect(() => start(), [])
+    useEffect(() => {
+        start();
+        return () => {
+            stop();
+        }
+    }, [])
 
     const stop = () => {
         clearTimeout(timerId)
