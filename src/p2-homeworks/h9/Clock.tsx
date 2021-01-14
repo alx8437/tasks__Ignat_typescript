@@ -4,7 +4,7 @@ import s from "./Clock.module.css"
 
 function Clock() {
     const [timerId, setTimerId] = useState<number>(0);
-    const [date, setDate] = useState<Date>();
+    const [date, setDate] = useState<Date>(new Date());
     const [show, setShow] = useState<boolean>(false);
 
     useEffect(() => {
@@ -35,13 +35,10 @@ function Clock() {
     const stringTime = date?.toLocaleTimeString();
     const stringDate = date?.toLocaleDateString();
 
-    //Чтобы не отображать стилизованный пустой div, т.к. useEffect сработает после отрисовки
-    let styleWrapper = date ? `${s.timeWrapper}` : '';
-
     return (
         <div>
             <div
-                className={styleWrapper}
+                className={s.timeWrapper}
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
             >
@@ -49,7 +46,7 @@ function Clock() {
             </div>
 
             {show && (
-                <div className={styleWrapper}>
+                <div className={s.timeWrapper}>
                     {stringDate}
                 </div>
             )}
