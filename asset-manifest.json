@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/tasks__Ignat_typescript/static/css/main.7d84d30c.chunk.css",
-    "main.js": "/tasks__Ignat_typescript/static/js/main.6c8bc77a.chunk.js",
-    "main.js.map": "/tasks__Ignat_typescript/static/js/main.6c8bc77a.chunk.js.map",
+    "main.css": "/tasks__Ignat_typescript/static/css/main.ba4f2111.chunk.css",
+    "main.js": "/tasks__Ignat_typescript/static/js/main.83050344.chunk.js",
+    "main.js.map": "/tasks__Ignat_typescript/static/js/main.83050344.chunk.js.map",
     "runtime-main.js": "/tasks__Ignat_typescript/static/js/runtime-main.16b2d2f7.js",
     "runtime-main.js.map": "/tasks__Ignat_typescript/static/js/runtime-main.16b2d2f7.js.map",
-    "static/js/2.6f7a4a30.chunk.js": "/tasks__Ignat_typescript/static/js/2.6f7a4a30.chunk.js",
-    "static/js/2.6f7a4a30.chunk.js.map": "/tasks__Ignat_typescript/static/js/2.6f7a4a30.chunk.js.map",
+    "static/js/2.eb84e60a.chunk.js": "/tasks__Ignat_typescript/static/js/2.eb84e60a.chunk.js",
+    "static/js/2.eb84e60a.chunk.js.map": "/tasks__Ignat_typescript/static/js/2.eb84e60a.chunk.js.map",
     "index.html": "/tasks__Ignat_typescript/index.html",
-    "precache-manifest.2202a1e6fa61454ea29722ca0f9ebe94.js": "/tasks__Ignat_typescript/precache-manifest.2202a1e6fa61454ea29722ca0f9ebe94.js",
+    "precache-manifest.8e9c3db8a608118a6b6fc0d55e80ffae.js": "/tasks__Ignat_typescript/precache-manifest.8e9c3db8a608118a6b6fc0d55e80ffae.js",
     "service-worker.js": "/tasks__Ignat_typescript/service-worker.js",
-    "static/css/main.7d84d30c.chunk.css.map": "/tasks__Ignat_typescript/static/css/main.7d84d30c.chunk.css.map",
-    "static/js/2.6f7a4a30.chunk.js.LICENSE.txt": "/tasks__Ignat_typescript/static/js/2.6f7a4a30.chunk.js.LICENSE.txt"
+    "static/css/main.ba4f2111.chunk.css.map": "/tasks__Ignat_typescript/static/css/main.ba4f2111.chunk.css.map",
+    "static/js/2.eb84e60a.chunk.js.LICENSE.txt": "/tasks__Ignat_typescript/static/js/2.eb84e60a.chunk.js.LICENSE.txt",
+    "static/media/preloader.gif": "/tasks__Ignat_typescript/static/media/preloader.2bc631ee.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.16b2d2f7.js",
-    "static/js/2.6f7a4a30.chunk.js",
-    "static/css/main.7d84d30c.chunk.css",
-    "static/js/main.6c8bc77a.chunk.js"
+    "static/js/2.eb84e60a.chunk.js",
+    "static/css/main.ba4f2111.chunk.css",
+    "static/js/main.83050344.chunk.js"
   ]
 }
